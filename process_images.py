@@ -24,6 +24,11 @@ def check_dir(mode):
     for file in new_files:
 
         image = Image.open(dirpath + '/' + file)
+        
+        # --- Image date ---
+        date = image.getexif().get(306)
+        print(date)
+        print(image.getexif())
 
         # --- Image size ---
         w, h = image.size
@@ -37,9 +42,7 @@ def check_dir(mode):
         image.save(thumbspath + '/' + thumb_name)
 
         # --- Prompt location ---
-
-        date = image.getexif().get(306)
-
+        
         new_file = {
             "src": "/images/"+mode+"/"+file,
             "thumb": "/images/"+mode+"/thumbs/"+thumb_name,
