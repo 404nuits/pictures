@@ -9,6 +9,7 @@ def check_dir(mode):
     filepath = "./jsons/" + mode + ".json"
 
     files_in_dir = os.listdir(dirpath)
+    files_in_dir.remove(".gitkeep")
 
     f = open(filepath)
     files_in_list = json.load(f)
