@@ -1,6 +1,7 @@
 name: Processing Image
 
 on:
+  workflow_dispatch: 
   push:
     paths:
       - 'images/**/*.jpg'
