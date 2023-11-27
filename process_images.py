@@ -46,7 +46,7 @@ def check_dir(mode):
         
         new_file = {
             "src": "/images/"+mode+"/"+file,
-            "thumb": "/images/"+mode+"/thumbs/"+thumb_name,
+            "thumb": "/thumbs/"+mode+"/"+thumb_name,
             "alt": file,
             "location": "",
             "width": w,
