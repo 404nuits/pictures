@@ -4,9 +4,9 @@ from datetime import datetime
 
 def check_dir(mode):
 
-    thumbspath = os.path.dirname(__file__) + "/thumbs/" + mode
-    dirpath = os.path.dirname(__file__) + "/images/" + mode
-    filepath = os.path.dirname(__file__) + "/jsons/" + mode + ".json"
+    thumbspath = "./thumbs/" + mode
+    dirpath = "./images/" + mode
+    filepath = "./jsons/" + mode + ".json"
 
     files_in_dir = os.listdir(dirpath)
 
