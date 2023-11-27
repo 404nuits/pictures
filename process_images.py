@@ -52,6 +52,7 @@ def check_dir(mode):
         }
 
         files_in_list.append(new_file)
+        print(files_in_list)
         sorted_list = sorted(files_in_list, reverse=True, key=lambda e: datetime.strptime(e["date"], '%Y:%m:%d %H:%M:%S'))
     
     # Serializing json
