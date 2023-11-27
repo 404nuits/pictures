@@ -12,6 +12,9 @@ jobs:
   process_image:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write
+
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
@@ -34,3 +37,6 @@ jobs:
       run: |
         # Replace this with the command to process your image
         python process_images.py
+
+    - name: Commit changes
+      uses: stefanzweifel/git-auto-commit-action@v5
