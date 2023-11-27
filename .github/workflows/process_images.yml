@@ -24,7 +24,11 @@ jobs:
       uses: py-actions/py-dependency-install@v4
       with:
         path: "requirements.txt"
-        
+    - name: Display the path
+      run: |
+        import os
+        print(os.environ['PATH'])
+      shell: python
     - name: Run image processing script
       run: |
         # Replace this with the command to process your image
