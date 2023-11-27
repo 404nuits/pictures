@@ -27,7 +27,7 @@ jobs:
     - name: Display the path
       run: |
         import os
-        print(os.environ['PATH'])
+        print(os.listdir('.'))
       shell: python
     - name: Run image processing script
       run: |
