@@ -28,4 +28,4 @@ jobs:
     - name: Run image processing script
       run: |
         # Replace this with the command to process your image
-        python process_image.py
+        python process_images.py
