@@ -1,5 +1,25 @@
 [
     {
+        "src": "/images/photos/IMG_9554.jpg",
+        "thumb": "/thumbs/photos/IMG_9554_thumb.jpg",
+        "alt": "IMG_9554.jpg",
+        "location": "",
+        "width": 4000,
+        "height": 6000,
+        "name": "IMG_9554.jpg",
+        "date": "2023:11:27 11:16:49"
+    },
+    {
+        "src": "/images/photos/IMG_9533.jpg",
+        "thumb": "/thumbs/photos/IMG_9533_thumb.jpg",
+        "alt": "IMG_9533.jpg",
+        "location": "",
+        "width": 4000,
+        "height": 6000,
+        "name": "IMG_9533.jpg",
+        "date": "2023:11:27 11:16:45"
+    },
+    {
         "src": "/images/photos/IMG_9492.jpg",
         "thumb": "/thumbs/photos/IMG_9492_thumb.jpg",
         "alt": "IMG_9492.jpg",
@@ -10,6 +30,16 @@
         "date": "2023:11:27 11:16:44"
     },
     {
+        "src": "/images/photos/IMG_9471.jpg",
+        "thumb": "/thumbs/photos/IMG_9471_thumb.jpg",
+        "alt": "IMG_9471.jpg",
+        "location": "",
+        "width": 4000,
+        "height": 6000,
+        "name": "IMG_9471.jpg",
+        "date": "2023:11:27 11:16:42"
+    },
+    {
         "src": "/images/photos/IMG_9436.jpg",
         "thumb": "/thumbs/photos/IMG_9436_thumb.jpg",
         "alt": "IMG_9436.jpg",
@@ -17,6 +47,16 @@
         "width": 5808,
         "height": 3872,
         "name": "IMG_9436.jpg",
+        "date": "2023:11:27 11:16:37"
+    },
+    {
+        "src": "/images/photos/IMG_9456.jpg",
+        "thumb": "/thumbs/photos/IMG_9456_thumb.jpg",
+        "alt": "IMG_9456.jpg",
+        "location": "",
+        "width": 5439,
+        "height": 3626,
+        "name": "IMG_9456.jpg",
         "date": "2023:11:27 11:16:37"
     },
     {
@@ -38,6 +78,26 @@
         "height": 5679,
         "name": "IMG_9382.jpg",
         "date": "2023:11:27 11:16:29"
+    },
+    {
+        "src": "/images/photos/IMG_9346.jpg",
+        "thumb": "/thumbs/photos/IMG_9346_thumb.jpg",
+        "alt": "IMG_9346.jpg",
+        "location": "",
+        "width": 5839,
+        "height": 3893,
+        "name": "IMG_9346.jpg",
+        "date": "2023:11:27 11:16:27"
+    },
+    {
+        "src": "/images/photos/IMG_9375.jpg",
+        "thumb": "/thumbs/photos/IMG_9375_thumb.jpg",
+        "alt": "IMG_9375.jpg",
+        "location": "",
+        "width": 6000,
+        "height": 4000,
+        "name": "IMG_9375.jpg",
+        "date": "2023:11:27 11:16:24"
     },
     {
         "src": "/images/photos/IMG_9273.JPG",
