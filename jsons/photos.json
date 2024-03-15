@@ -768,5 +768,15 @@
         "height": 5692,
         "name": "IMG_7571-min.JPG",
         "date": "1990:01:01 01:00:00"
+    },
+    {
+        "src": "/images/photos/IMG_7523.jpg",
+        "thumb": "/thumbs/photos/IMG_7523_thumb.jpg",
+        "alt": "IMG_7523.jpg",
+        "location": "",
+        "width": 5297,
+        "height": 4000,
+        "name": "IMG_7523.jpg",
+        "date": "1990:01:01 01:00:00"
     }
 ]
