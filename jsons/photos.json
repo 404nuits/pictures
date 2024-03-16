@@ -754,8 +754,8 @@
         "thumb": "/thumbs/photos/IMG_6549_thumb.jpg",
         "alt": "IMG_6549.JPG",
         "location": "",
-        "width": 1920,
-        "height": 1280,
+        "width": 1280,
+        "height": 1920,
         "name": "IMG_6549.JPG",
         "date": "2022:08:20 15:19:18"
     },
@@ -764,8 +764,8 @@
         "thumb": "/thumbs/photos/IMG_6430_thumb.jpg",
         "alt": "IMG_6430.JPG",
         "location": "",
-        "width": 1920,
-        "height": 1280,
+        "width": 1280,
+        "height": 1920,
         "name": "IMG_6430.JPG",
         "date": "2022:08:15 12:46:09"
     }
