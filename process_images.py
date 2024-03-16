@@ -1,6 +1,21 @@
-import os, json
+import os, json, exiftool
 from PIL import Image
 from datetime import datetime
+
+
+def get_date(pil_obj, img_path):
+    date = pil_obj.getexif().get(306)
+    if date is None:
+        with exiftool.ExifToolHelper() as et:
+            try:
+                metadata = et.get_tags(img_path, tags=['IPTC:DateCreated', 'IPTC:TimeCreated'])[0]
+                date = metadata['IPTC:DateCreated'] + ' ' + metadata['IPTC:TimeCreated']
+            except Exception:
+                metadata = et.get_tags(img_path, tags=['EXIF:DateTimeOriginal'])[0]
+                date = metadata['EXIF:DateTimeOriginal']
+                #print(f"{img_path} -> {datetime.now()}")
+
+    return date if date is not None else datetime.now().strftime("%Y:%m:%d %H:%M:%S")
 
 def check_dir(mode):
 
@@ -21,15 +36,17 @@ def check_dir(mode):
 
     sorted_list = []
 
+    if not new_files: return
+
     # Creating thumbnails for new images
     for file in new_files:
 
-        image = Image.open(dirpath + '/' + file)
+        path = dirpath + '/' + file
+        image = Image.open(path)
         
         # --- Image date ---
-        date = image.getexif().get(306)
-        print(date)
-        print(image.getexif())
+        date = get_date(image, path)
+        print(f"{path} -> {date}")
 
         # --- Image size ---
         w, h = image.size
@@ -52,7 +69,7 @@ def check_dir(mode):
             "width": w,
             "height": h,
             "name": file,
-            "date": date if date is not None else "1990:01:01 01:00:00"
+            "date": date
         }
 
         files_in_list.append(new_file)
