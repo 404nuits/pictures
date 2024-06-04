@@ -20,7 +20,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Install exiftool
-    run: sudo apt install -y libimage-exiftool-perl
+      run: sudo apt install -y libimage-exiftool-perl
 
     - name: Set up Python
       uses: actions/setup-python@v2
