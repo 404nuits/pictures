@@ -10,7 +10,7 @@ def get_date(pil_obj, img_path):
             metadata = et.get_tags(img_path, tags=['IPTC:DateCreated', 'IPTC:TimeCreated'])[0]
             if metadata['IPTC:DateCreated'] and metadata['IPTC:TimeCreated']:
                 date = metadata['IPTC:DateCreated'] + ' ' + metadata['IPTC:TimeCreated']
-            else if et.get_tags(img_path, tags=['EXIF:DateTimeOriginal'])[0]['EXIF:DateTimeOriginal']:
+            elif et.get_tags(img_path, tags=['EXIF:DateTimeOriginal'])[0]['EXIF:DateTimeOriginal']:
                 metadata = et.get_tags(img_path, tags=['EXIF:DateTimeOriginal'])[0]
                 date = metadata['EXIF:DateTimeOriginal']
             else:
