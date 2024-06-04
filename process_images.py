@@ -7,13 +7,14 @@ def get_date(pil_obj, img_path):
     date = pil_obj.getexif().get(306)
     if date is None:
         with exiftool.ExifToolHelper() as et:
-            try:
-                metadata = et.get_tags(img_path, tags=['IPTC:DateCreated', 'IPTC:TimeCreated'])[0]
+            metadata = et.get_tags(img_path, tags=['IPTC:DateCreated', 'IPTC:TimeCreated'])[0]
+            if metadata['IPTC:DateCreated'] and metadata['IPTC:TimeCreated']:
                 date = metadata['IPTC:DateCreated'] + ' ' + metadata['IPTC:TimeCreated']
-            except Exception:
+            else if et.get_tags(img_path, tags=['EXIF:DateTimeOriginal'])[0]['EXIF:DateTimeOriginal']:
                 metadata = et.get_tags(img_path, tags=['EXIF:DateTimeOriginal'])[0]
                 date = metadata['EXIF:DateTimeOriginal']
-                #print(f"{img_path} -> {datetime.now()}")
+            else:
+                date = None
 
     return date if date is not None else datetime.now().strftime("%Y:%m:%d %H:%M:%S")
 
