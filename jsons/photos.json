@@ -1,5 +1,45 @@
 [
     {
+        "src": "/images/photos/IMG_9726-min.jpg",
+        "thumb": "/thumbs/photos/IMG_9726-min_thumb.jpg",
+        "alt": "IMG_9726-min.jpg",
+        "location": "",
+        "width": 4909,
+        "height": 3302,
+        "name": "IMG_9726-min.jpg",
+        "date": "2024:08:06 02:05:14"
+    },
+    {
+        "src": "/images/photos/IMG_8776-min.jpg",
+        "thumb": "/thumbs/photos/IMG_8776-min_thumb.jpg",
+        "alt": "IMG_8776-min.jpg",
+        "location": "",
+        "width": 3902,
+        "height": 5853,
+        "name": "IMG_8776-min.jpg",
+        "date": "2024:08:06 02:05:14"
+    },
+    {
+        "src": "/images/photos/IMG_2696-min.jpg",
+        "thumb": "/thumbs/photos/IMG_2696-min_thumb.jpg",
+        "alt": "IMG_2696-min.jpg",
+        "location": "",
+        "width": 5607,
+        "height": 3738,
+        "name": "IMG_2696-min.jpg",
+        "date": "2024:08:06 02:05:14"
+    },
+    {
+        "src": "/images/photos/IMG_8790-2-min.jpg",
+        "thumb": "/thumbs/photos/IMG_8790-2-min_thumb.jpg",
+        "alt": "IMG_8790-2-min.jpg",
+        "location": "",
+        "width": 4000,
+        "height": 6000,
+        "name": "IMG_8790-2-min.jpg",
+        "date": "2024:08:06 02:05:14"
+    },
+    {
         "src": "/images/photos/IMG_8915-2-min.jpg",
         "thumb": "/thumbs/photos/IMG_8915-2-min_thumb.jpg",
         "alt": "IMG_8915-2-min.jpg",
